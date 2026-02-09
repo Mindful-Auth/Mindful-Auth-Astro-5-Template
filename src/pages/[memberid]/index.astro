@@ -45,13 +45,13 @@ if (!recordId) {
             required
           />
         </div>
-        <div id="2fa-code-container-change-password" hidden>
-          <label for="2fa-code-change-password"><b>2FA Code *</b></label>
+        <div id="twofa-code-container-change-password" hidden>
+          <label for="twofa-code-change-password"><b>2FA Code *</b></label>
           <small>Enter the 6-digit code from your authenticator app.</small>
           <input
             type="text"
-            id="2fa-code-change-password"
-            name="2fa-code-change-password"
+            id="twofa-code-change-password"
+            name="twofa-code-change-password"
             inputmode="numeric"
             pattern="[0-9]{6}"
             maxlength="6"
@@ -72,7 +72,7 @@ if (!recordId) {
     </section>
   
     <!-- 2FA SETUP -->
-    <section id="2fa-setup" class="content-card" hidden>
+    <section id="twofa-setup" class="content-card" hidden>
       <h2>Scan the QR Code</h2>
       <p>Use an authenticator app like Google Authenticator or 1Password to scan this code.</p>
       <div class="qr-wrapper">
@@ -80,10 +80,10 @@ if (!recordId) {
       </div>
       <form id="verify-2fa-form" method="post" class="form-compact">
         <div class="form-group">
-          <label for="2fa-token"><b>Enter the 6-digit code from your app *</b></label>
+          <label for="twofa-token"><b>Enter the 6-digit code from your app *</b></label>
           <small>Look for the 6-digit code in your authenticator app</small>
           <input
-            id="2fa-token"
+            id="twofa-token"
             type="text"
             placeholder="000000"
             inputmode="numeric"
@@ -96,7 +96,7 @@ if (!recordId) {
       </form>
     </section>
   
-    <div id="2fa-message" class="message"></div>
+    <div id="twofa-message" class="message"></div>
   
     <!-- RECOVERY CODES -->
     <section id="recovery-codes-container" class="content-card security-alert" hidden>

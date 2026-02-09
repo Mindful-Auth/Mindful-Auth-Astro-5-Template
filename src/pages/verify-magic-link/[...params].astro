@@ -12,14 +12,14 @@ import AuthLayout from "@/layouts/AuthLayout.astro";
             </div>
 
             <form id="verify-magic-link-form" method="post">
-                <div id="2fa-code-container-magic-link" hidden>
-                    <label for="2fa-code-magic-link"
+                <div id="twofa-code-container-magic-link" hidden>
+                    <label for="twofa-code-magic-link"
                         >Two-Factor Authentication Code</label
                     >
                     <input
                         type="text"
-                        id="2fa-code-magic-link"
-                        name="2fa-code-magic-link"
+                        id="twofa-code-magic-link"
+                        name="twofa-code-magic-link"
                         inputmode="numeric"
                         pattern="[0-9]{6}"
                         maxlength="6"

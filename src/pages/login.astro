@@ -18,9 +18,9 @@ import AuthLayout from '@/layouts/AuthLayout.astro';
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <div id="2fa-section" style="display: none;">
-            <label for="2fa-code">Authenticator Code</label>
-            <input type="text" id="2fa-code" name="2fa-code" pattern="[0-9]*" maxlength="6" placeholder="123456" inputmode="numeric">
+        <div id="twofa-section" style="display: none;">
+            <label for="twofa-code">Authenticator Code</label>
+            <input type="text" id="twofa-code" name="twofa-code" pattern="[0-9]*" maxlength="6" placeholder="123456" inputmode="numeric">
             <a id="use-recovery-link" href="#">Use a recovery code instead</a>
         </div>
         <a href="/forgot-password">Forgot Your Password?</a>
