@@ -4,6 +4,10 @@ Edge-Native identity starter for Astro. Mindful Auth provides the identity logic
 
 > **[Claim 1 of 20 Lifetime Beta Spots](https://share.tapeapp.com/ebfb35f7be514a288dece3d369bd7779)**
 
+[![Setup Mindful Auth Authentication App with Astro & Cloudflare D1](https://img.youtube.com/vi/M0CGPNKiEiE/maxresdefault.jpg)](https://www.youtube.com/watch?v=M0CGPNKiEiE)
+
+[Click to watch the full setup video on YouTube](https://www.youtube.com/watch?v=M0CGPNKiEiE)
+
 ## Why Mindful Auth?
 
 Most auth providers hold your user data hostage and add significant latency to your stack. Mindful Auth is different:
