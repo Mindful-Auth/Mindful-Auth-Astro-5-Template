@@ -64,23 +64,23 @@ if (!recordId) {
   </section>
 
   <!-- ENABLE 2FA SECTION -->
-  <section class="content-card" data-mindfulauth-field="enable-2fa-section">
+  <section class="content-card" data-mindfulauth-section="enable">
     <h2>Two-Factor Authentication</h2>
     <p>Protect your account with an extra layer of security.</p>
-    <button class="submit-btn" data-mindfulauth-action="enable-2fa"
+    <button class="submit-btn" data-mindfulauth-field="enable-btn"
       >Enable 2FA</button
     >
   </section>
 
   <!-- 2FA SETUP -->
-  <section class="content-card" hidden data-mindfulauth-field="twofa-setup">
+  <section class="content-card" hidden data-mindfulauth-field="setup">
     <h2>Scan the QR Code</h2>
     <p>
       Use an authenticator app like Google Authenticator or 1Password to scan
       this code.
     </p>
     <div class="qr-wrapper">
-      <div class="qr-display" data-mindfulauth-field="qr-code"></div>
+      <div class="qr-display" data-mindfulauth-field="qr-code-container"></div>
     </div>
     <form method="post" class="form-compact" data-mindfulauth-form="verify-2fa">
       <div class="form-group">
@@ -93,7 +93,7 @@ if (!recordId) {
           pattern="[0-9]{6}"
           maxlength="6"
           class="code-input"
-          data-mindfulauth-field="twofa-token"
+          data-mindfulauth-field="token"
         />
       </div>
       <button type="submit" class="submit-btn">Verify &amp; Enable</button>
@@ -106,7 +106,7 @@ if (!recordId) {
   <section
     class="content-card security-alert"
     hidden
-    data-mindfulauth-field="recovery-codes"
+    data-mindfulauth-field="recovery-codes-container"
   >
     <div class="alert-header">
       <h2>Save Your Recovery Codes</h2>
@@ -121,7 +121,7 @@ if (!recordId) {
       </ul>
     </div>
     <div class="button-group">
-      <button class="submit-btn" data-mindfulauth-action="copy-codes"
+      <button class="submit-btn" data-mindfulauth-field="copy-codes-btn"
         >Copy Codes</button
       >
     </div>
@@ -132,7 +132,7 @@ if (!recordId) {
   <section
     class="content-card security-alert alert-danger"
     hidden
-    data-mindfulauth-field="disable-2fa-section"
+    data-mindfulauth-section="disable"
   >
     <h2>Disable Two-Factor Authentication</h2>
     <p>
@@ -156,10 +156,10 @@ if (!recordId) {
       <button
         type="submit"
         class="submit-btn btn-danger"
-        data-mindfulauth-action="disable-2fa">Disable 2FA</button
+        data-mindfulauth-field="disable-btn">Disable 2FA</button
       >
     </form>
-    <div class="message" data-mindfulauth-field="disable-2fa-message"></div>
+    <div class="message" data-mindfulauth-field="disable-message"></div>
   </section>
 
   <!-- ADD AUTHENTICATION METHOD -->
@@ -169,7 +169,7 @@ if (!recordId) {
     <form method="post" data-mindfulauth-form="add-auth">
       <fieldset class="auth-fieldset">
         <legend>Select Authentication Method *</legend>
-        <div class="auth-options" data-mindfulauth-field="auth-method">
+          <div class="auth-options" data-mindfulauth-field="method">
           <div class="auth-option">
             <input type="radio" name="method" value="Password" />
             <label>
@@ -191,7 +191,7 @@ if (!recordId) {
               name="password"
               minlength="8"
               placeholder="At least 8 characters"
-              data-mindfulauth-field="password"
+              data-mindfulauth-field="new-password"
             />
           </div>
           <div class="auth-option">
