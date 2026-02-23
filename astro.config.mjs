@@ -5,7 +5,7 @@ import { mauthSecurityConfig, getMauthViteDefines } from '@mindfulauth/core/conf
 
 // Configure Mindful Auth security settings
 const mauthCfg = mauthSecurityConfig({
-    skipAssets: ['/sitemap.xml', '/manifest.webmanifest'],
+    skipAssets: [],
     csp: {
         scriptSources: [],
         connectSources: [],
