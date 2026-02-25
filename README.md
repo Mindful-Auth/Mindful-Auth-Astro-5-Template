@@ -1,4 +1,4 @@
-# Mindful Auth: Astro + Cloudflare D1 Starter
+# Mindful Auth: Astro 5 + Cloudflare D1 Starter
 
 Edge-Native identity starter for Astro. Mindful Auth provides the identity logic and security layer, while you maintain 100% ownership of your user data in your own Cloudflare D1 database.
 
